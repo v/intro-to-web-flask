@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> Simple Page </title>
+    </head>
+    <body>
+        <h1> List of Orders </h1>
+        <ol>
+            {% for item in orders_list %}
+            <li> {{ item[0] }} - {{ item[1] }} </li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>

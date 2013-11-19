@@ -1,0 +1,57 @@
+HTML - Language of the web
+
+When I go to google.com - there's a client server architecture going on.
+
+HTML is an XML format
+    - It's got "tags".
+    - <html> is an opening tag for the "html" element.
+    - <title> is an opening tag.
+    - </title> is a closing tag.
+    - <h1> stands for header 1 - the biggest possible header.
+    - whitespace does not matter.
+    - <br> makes a line break.
+
+Tags can have attributes
+    - a tag is a link tag. href attribute - Hyperlink reference
+
+HTML is a "Markup Language" - It deals with the presentation of content, and not with programming logic.
+
+Every program in the world has to take in input and give you output.
+
+HTML is not a programming language.
+
+forms and input.
+    - The web is powered by forms and input.
+    - when you "submit a form", your URL changes:
+        * ?name=V&lunch=pizza
+        * ?name=Billy&lunch=burrito
+        * ?first_name=billy&lunch=pizza
+
+You need a programming language to do something with this input. We're going to use Python / Flask.
+
+what is Flask
+    - Flask is "Web server"
+    - Web is a client server architecture
+        * When I go to Google, my browser sends a "request" to Google, and gets back a "response".
+        * Flask is now the "server" my browser is talking to.
+    - What Flask is returning is just HTML.
+    - You can render_templates in Flask to spit out HTML files (remember to create a templates/ folder).
+
+Notice that when I submit the form. The "parameters" are in the URL.
+
+When you submit a form using POST, the "parameters" are not in URL. They are "hidden" in HTTP Request.
+
+You use POST to submit a form
+    - When you have things that would look bad in the URL.
+    - When you don't want people to be able to visit the page just by visiting the URL.
+    - Things that "change state" should be used with POST.
+    - GET is used for "information retrieval".
+
+HTTPS
+    - means that your Request and Response to the server is encrypted.
+
+Certificate for HTTPS - Verisign
+
+v.com
+
+Action is where the data for this form should be submitted.
